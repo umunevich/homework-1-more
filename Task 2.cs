@@ -6,6 +6,10 @@ namespace ConsoleApp1
     {
         static int NearestPrimeNum(int x)
         {
+            if (x==1)
+            {
+                return 2;
+            }
             bool[] primes = new bool[x*x];
             Array.Fill(primes, true);
             primes[0] = false;
